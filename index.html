@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOODIE · Order food online</title>
+  <meta name="description" content="FOODIE: Online Food Ordering System (test build v1.0)">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍔</text></svg>">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="test-ribbon">TEST BUILD v1.0 · 3 open defects · <a href="#/testlab">Test Lab</a> · Press <kbd>F1</kbd> for the testing guide</div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#/" class="brand" aria-label="FOODIE home">FOODIE</a>
+      <button class="location" data-action="noop" title="Delivery location">
+        <span class="location-label">Home</span>
+        <span class="location-text">Chennai, Tamil Nadu</span>
+      </button>
+      <nav class="nav">
+        <a href="#/search" class="nav-link" data-nav="search"><span class="nav-icon">🔍</span><span class="nav-text">Search</span></a>
+        <a href="#/orders" class="nav-link" data-nav="orders"><span class="nav-icon">🧾</span><span class="nav-text">Orders</span></a>
+        <a href="#/testlab" class="nav-link" data-nav="testlab"><span class="nav-icon">🧪</span><span class="nav-text">Test Lab</span></a>
+        <span id="nav-user"></span>
+        <a href="#/cart" class="nav-link nav-cart" data-nav="cart"><span class="nav-icon">🛒</span><span class="nav-text">Cart</span><span class="cart-count" id="cart-count" hidden>0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="container"></main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="brand brand-sm">FOODIE</span>
+      <span>Online Food Ordering System · Team 04 · SVV test build · October 2026</span>
+    </div>
+  </footer>
+
+  <button class="guide-fab" id="guide-fab" data-action="open-guide" aria-haspopup="dialog" aria-keyshortcuts="F1" title="Open the README testing guide (F1)">
+    <span class="guide-dot" id="guide-dot" aria-hidden="true"></span>
+    <span class="guide-icon" aria-hidden="true">📖</span>
+    <span class="guide-label">Testing guide</span>
+    <span class="guide-badge" id="guide-badge">README</span>
+    <kbd class="guide-key">F1</kbd>
+  </button>
+
+  <div id="modal-root"></div>
+  <div id="toasts" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/logic.js"></script>
+  <script src="js/testcases.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

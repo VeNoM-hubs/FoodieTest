@@ -1,0 +1,10 @@
+{
+  "name": "foodie",
+  "version": "1.0.0",
+  "description": "FOODIE: a basic Swiggy-style online food ordering app (SVV test build with known defects BUG-01..BUG-03)",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test --test-reporter=spec \"tests/*.test.js\""
+  }
+}
